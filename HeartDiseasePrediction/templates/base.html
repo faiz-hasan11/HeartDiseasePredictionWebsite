@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>HeartDiseasePrediction</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <div class="test" >
+    <h1 class="small">– Heart Disease Prediction – <h1/>
+    </div>
+{% block content %}
+{% endblock %}
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="squiggly-0">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+      <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+    </filter>
+    <filter id="squiggly-1">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+    </filter>
+
+    <filter id="squiggly-2">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+      </filter>
+    <filter id="squiggly-3">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+    </filter>
+
+    <filter id="squiggly-4">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+    </filter>
+  </defs>
+</svg>
+<center>
+<footer >
+  <a href="https://github.com/faiz-hasan11"><i class="fa fa-github fa-3x icon-3d" ></i></a>
+  <a href="https://www.linkedin.com/in/syed-faiz-hasan-3249071a9/"><i class="fa fa-linkedin fa-3x icon-3d" ></i></a><br>
+  <i class="smaller" >Made By - Syed Faiz Hasan</i>
+</footer>
+</center>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+</body>
+</html>

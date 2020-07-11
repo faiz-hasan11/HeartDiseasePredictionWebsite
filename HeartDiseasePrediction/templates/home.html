@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+    <center>
+<div class="container">
+  <form id="contact" method="post" enctype="multipart/form-data" action="predictResult">
+    {% csrf_token %}
+    <h3>Please Enter Details</h3>
+    <fieldset>
+      <input placeholder="Age(In Years)" type="text" tabindex="1" name="ageVal" required value={{temp.age}}>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Gender(1 = male; 0 = female)" tabindex="2" required type="text" id="lname" name="genderVal" value={{temp.sex}}>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Chest Pain Type(0,1,2,3 Values)" tabindex="2" required type="text" id="fname" name="chestpainVal" value={{temp.cp}}>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Resting Blood Pressure(in mm Hg)" tabindex="2" required type="text" id="lname" name="trestbpsVal" value={{temp.trestbps}}>
+    </fieldset><fieldset>
+      <input placeholder="Serum Cholestoral(in mg/dl)" tabindex="2" required type="text" id="fname" name="cholVal" value={{temp.chol}}>
+    </fieldset><fieldset>
+      <input placeholder="Fasting Blood Sugar(1 if sugar > 120 mg/dl else 0)" tabindex="2" required type="text" id="lname" name="fbsVal" value={{temp.fbs}}>
+    </fieldset><fieldset>
+      <input placeholder="Resting Electrocardiographic Results(0,1,2 Values)" tabindex="2" required type="text" id="lname" name="restecgVal" value={{temp.restecg}}>
+    </fieldset><fieldset>
+      <input placeholder="Maximum Heart Rate Achieved(beats per minute)" tabindex="2" required type="text" id="lname"  name="thalachVal" value={{temp.thalach}}>
+    </fieldset><fieldset>
+      <input placeholder="Exercise Induced Angina(1 = yes; 0 = no)" tabindex="2" required type="text" id="lname" name="exangVal" value={{temp.exang}}>
+    </fieldset><fieldset>
+      <input placeholder="ST Depression(Induced by exercise relative to rest)" tabindex="2" required type="text" id="lname" name="oldpeakVal" value={{temp.oldpeak}}>
+    </fieldset><fieldset>
+      <input placeholder="ST Segment(slope of peak exercise ST segment(0,1,2 Values)" tabindex="2" required type="text" id="lname" name="slopeVal" value={{temp.slope}}>
+    </fieldset><fieldset>
+      <input placeholder="No. Of Major Vessels Colored By Flourosopy(0,1,2,3,4 Values)" tabindex="2" required type="text" id="lname" name="caVal" value={{temp.ca}}>
+    </fieldset><fieldset>
+      <input placeholder="Results of Thallium Stress Test (0,1,2,3 Values)" tabindex="2" required type="text" id="lname" name="thalVal" value={{temp.thal}}>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" value="Submit">Submit</button>
+    </fieldset>
+  </form>
+</div>
+</center>
+{% endblock %}
