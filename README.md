@@ -37,4 +37,7 @@ Internet connection is a must to run the app.
 
 The app is now live at localhost.
 
+## Screenshots
+* Home Page
+![homepage]()
 
