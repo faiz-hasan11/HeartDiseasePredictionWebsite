@@ -1,11 +1,10 @@
 # HeartDiseasePredictionWebsite
 
-This is a website to predict whether a person suffers from a heart diease or not. This is a machine learning project where the prediction is made by a machine learning algorithm. The Jupyter Notebook used has been provided. The dataset was taken from Kaggle. The dataset was analyzed before passing it onto various models. Finally RandomForest was selected among various different alogorithms and then the notebook was pickled to make it run on a webserver.
+This is a website to predict whether a person suffers from a heart diease or not. This is a machine learning project where the prediction is made by a machine learning algorithm. The Jupyter Notebook used has been provided. The dataset was taken from Kaggle. The dataset was analyzed before passing it onto various models. Finally RandomForest was selected among various different alogorithms as it provided an accuracy of 92.31% and then the notebook was pickled to make it run on a webserver.
 
 
 ## Built With
 * [Django](https://www.djangoproject.com/) - The Web Framework used for backend
-* [MySQL](https://www.mysql.com/) - The database used for storing data.
 
 
 
@@ -25,13 +24,8 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the pac
 ```bash
 pip install -r requirements.txt
 ```
-Or 
-Install the following to run on local host.
-```bash
-pip install django
-pip install Pillow
-```
-Change directory to blogs.
+
+Change directory to HeartDiseasePrediction.
 Run the following command
 ```bash
 python manage.py runserver
