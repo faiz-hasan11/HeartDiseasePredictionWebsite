@@ -1,6 +1,6 @@
 # HeartDiseasePredictionWebsite
 
-This a website to predict whether a person suffers from a heart diease or not. This is a machine learning project where the the prediction is made by a machine learning algorithm. The Jupyter Notebook used has been provided. The dataset was taken from Kaggle. The dataset was analyzed before passing it onto various models.
+This a website to predict whether a person suffers from a heart diease or not. This is a machine learning project where the prediction is made by a machine learning algorithm. The Jupyter Notebook used has been provided. The dataset was taken from Kaggle. The dataset was analyzed before passing it onto various models. Finally RandomForest was selected among various different alogorithms and then the notebook was pickled to make it run on a webserver.
 
 
 ## Built With
