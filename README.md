@@ -39,5 +39,5 @@ The app is now live at localhost.
 
 ## Screenshots
 * Home Page
-![homepage]()
+![homepage](https://github.com/faiz-hasan11/HeartDiseasePredictionWebsite/blob/master/Screenshots/HomePage.png)
 
