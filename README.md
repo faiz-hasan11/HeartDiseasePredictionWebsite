@@ -40,4 +40,8 @@ The app is now live at localhost.
 ## Screenshots
 * Home Page
 ![homepage](https://github.com/faiz-hasan11/HeartDiseasePredictionWebsite/blob/master/Screenshots/HomePage.png)
+* Prediction Page
+![Have Diease](https://github.com/faiz-hasan11/HeartDiseasePredictionWebsite/blob/master/Screenshots/HaveDisease.png)
+![Dont Have Diease](https://github.com/faiz-hasan11/HeartDiseasePredictionWebsite/blob/master/Screenshots/DontHaveDisease.png)
+
 
